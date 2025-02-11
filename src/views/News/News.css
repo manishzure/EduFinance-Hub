@@ -1,0 +1,130 @@
+/* Root Variables for Styling */
+:root {
+  --primary-color: #4e9f3d;
+  --hover-color: #22577a;
+  --text-color: #333;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Main Container */
+.news-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+  max-width: 900px;
+  margin: 30px auto; /* Reduced top margin */
+  border-radius: 12px;
+  box-shadow: 0 2px 8px var(--shadow-color);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Search Form */
+.search-form {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 25px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.search-form input {
+  flex: 2; /* Make the input field take more space */
+  padding: 12px;
+  font-size: 16px;
+  border: 1.5px solid var(--primary-color);
+  border-radius: 8px;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.search-form input:focus {
+  border-color: var(--hover-color);
+  outline: none;
+}
+
+.search-form select {
+  flex: 1; /* Make the select smaller */
+  padding: 8px; /* Adjust padding to make it smaller */
+  font-size: 14px; /* Smaller font size for the select */
+  border: 1.5px solid var(--primary-color);
+  border-radius: 8px;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.search-form select:focus {
+  border-color: var(--hover-color);
+  outline: none;
+}
+
+.search-form button {
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.search-form button:hover {
+  background-color: var(--hover-color);
+  transform: scale(1.05);
+}
+
+/* News List */
+.news-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+/* Individual News Item */
+.news-item {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px var(--shadow-color);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.news-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px var(--shadow-color);
+}
+
+.news-item h3 {
+  margin: 0;
+  font-size: 22px;
+  color: var(--hover-color);
+}
+
+.news-item p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+.news-item a {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--primary-color);
+  transition: color 0.3s ease;
+}
+
+.news-item a:hover {
+  color: var(--hover-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .search-form {
+    flex-direction: column;
+  }
+
+  .search-form button {
+    width: 100%;
+  }
+}

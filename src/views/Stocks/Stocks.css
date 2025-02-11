@@ -1,0 +1,83 @@
+/* Container for the stock component */
+.stock-container {
+    background-color: #f8f9fa; /* Light background for contrast */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Reduced padding for space */
+    max-width: 600px; /* Max width for responsiveness */
+    margin: 40px auto; /* Centering the component */
+    font-family: 'Arial', sans-serif; /* Font family */
+}
+
+/* Header styling */
+.stock-header {
+    text-align: center; /* Center the header text */
+    color: #333; /* Darker text color */
+    font-size: 24px; /* Reduced font size */
+    margin-bottom: 15px; /* Reduced margin below the header */
+}
+
+/* Form styling */
+.stock-form {
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Column layout */
+    gap: 10px; /* Reduced space between inputs */
+}
+
+/* Input and select styling */
+.stock-input,
+.stock-select {
+    padding: 10px; /* Reduced padding inside inputs */
+    border: 1px solid #ced4da; /* Light border */
+    border-radius: 6px; /* Slightly smaller rounded corners */
+    font-size: 14px; /* Reduced font size */
+    transition: border-color 0.3s ease; /* Transition for border color */
+}
+
+.stock-input:focus,
+.stock-select:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Button styling */
+.stock-button {
+    padding: 10px; /* Reduced padding inside button */
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    font-size: 16px; /* Reduced button font size */
+    border: none; /* Remove border */
+    border-radius: 6px; /* Slightly smaller rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Transition for background color */
+}
+
+.stock-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Profit display section styling */
+.icon {
+    margin-top: 20px; /* Reduced space above the profit display */
+    font-size: 18px; /* Reduced font size */
+    text-align: center; /* Center text */
+}
+
+/* Start price, end price, and profit styling */
+.icon p {
+    margin: 4px 0; /* Reduced margin for spacing */
+    font-weight: 500; /* Slightly bolder text */
+}
+
+/* Highlighting profit differently based on value */
+.icon p:nth-child(3) { /* Targeting the profit paragraph specifically */
+    color: #28a745; /* Green for profit */
+    font-size: 22px; /* Slightly reduced larger font size for emphasis */
+    font-weight: bold; /* Bold text for profit */
+}
+
+.icon p:nth-child(1),
+.icon p:nth-child(2) {
+    color: #6c757d; /* Grey color for start and end prices */
+    font-size: 16px; /* Reduced font size */
+}
